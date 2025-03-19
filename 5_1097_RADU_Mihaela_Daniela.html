@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="5_1097_RADU_Mihaela_Daniela.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Asteroids game</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">Asteroids</h1>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="livesDisplay" class="lives-container"></div>
+
+    <div id="scoreDisplay"></div>
+
+    <div id="highScores" style="display: none;">
+        <h2>High Scores</h2>
+        <ul id="highScoreList"></ul>
+    </div>
+    
+
+    <div class="touchControls">
+        <div class="leftControls">
+            <button id="rotateLeftButton" class="btn btn-secondary"><i class="bi bi-arrow-counterclockwise"></i></button>
+            <button id="rotateRightButton" class="btn btn-secondary"><i class="bi bi-arrow-clockwise"></i></button>
+            <button id="shootButton" class="btn btn-danger"><i class="bi bi-bullseye"></i></button>
+        </div>
+        <div class="rightControls">
+            <button id="upButton" class="btn btn-secondary"><i class="bi bi-caret-up-fill"></i></button>
+            <div>
+                <button id="leftButton" class="btn btn-secondary"><i class="bi bi-caret-left-fill"></i></button>
+                <button id="downButton" class="btn btn-secondary"><i class="bi bi-caret-down-fill"></i></button>
+                <button id="rightButton" class="btn btn-secondary"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameOverMessage">
+        <h1>GAME OVER</h1>
+        <p>Press Enter to Restart</p>
+    </div>
+
+    <script src="5_1097_RADU_Mihaela_Daniela.js"></script>
+</body>
+</html>
